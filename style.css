@@ -1,0 +1,257 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+/* verze mobil*/
+
+body {
+  color:#8B8B8B;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 21px;
+  font-weight: 300;
+}
+
+
+.kontejner {
+  max-width: 500px;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #FAFAFA;
+  margin: 0 auto;
+}
+
+.hlavni img {
+  width: 350px;
+}
+
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 0; 
+  font-size: 28px;
+  line-height: 37px;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+h1,
+h2 {
+  color: #000000;
+  font-weight: 700;
+}
+
+.oddelovac {
+  width: 60px;
+  height: 2px;
+  background-color: #407BFF;
+  margin: 10px auto 30px auto;
+}
+
+.hlavni p {
+  margin-bottom: 30px;
+}
+
+button {
+  display: block;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 29px;
+  border: none;
+  font-size: 14px;
+  line-height: 18px;
+  height: 40px;
+  margin: 10px auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dobrodruzstvi {
+  background-color: #407BFF;
+  width: 195px;
+}
+
+.pohoda {
+  background-color: #8B8B8B;
+  width: 220px;
+}
+
+.sluzby-ck,
+.delegati {
+  margin-top: 50px;
+}
+
+.box {
+  background-color: #FFFFFF;
+  display:flex;
+  align-items: center;
+  box-shadow: 0px 4px 6px #407BFF1F;
+  border-radius: 10px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.box img,
+.box p {
+  padding: 20px;
+}
+
+.box img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+.dobrodruzstvi:hover,
+.dobrodruzstvi:active {
+  background-color: #0e3fa8;
+}
+
+.pohoda:hover,
+.pohoda:active {
+  background-color: #646060;
+}
+
+
+/* verze tablet*/
+
+@media screen and (min-width: 640px) {
+
+.kontejner {
+  max-width: 770px;
+  padding: 60px 20px;
+}
+
+.hlavni img {
+  max-width: 400px;
+}
+
+.sekce p {
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  display: inline-block;
+}
+
+.dobrodruzstvi {
+  margin-right: 15px;
+}
+
+.boxy {
+  display:flex;
+  justify-content: space-between;
+  margin-top: 40px; 
+  width: 100%;
+}
+
+.box {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 230px;
+  height: 170px;
+  padding-top: 40px;
+}
+
+.box img { 
+  max-width: 100%;
+  padding: 0;
+}
+
+.box p {
+  padding: 20px 15px 40px 15px; 
+  max-width: 100%;
+  margin: 0;
+}
+
+.sluzby-ck,
+.delegati {
+  margin-top: 70px;
+}
+}
+
+/* verze PC*/
+
+@media screen and (min-width: 1100px) {
+
+  .kontejner {
+    max-width: 1200px;
+    padding: 0;
+  }
+
+  .obsah {
+    max-width: 1040px;
+    margin: 60px auto;
+  }
+
+  .hlavni {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hlavni img,
+  .uvod {
+    max-width: 490px;
+  }
+
+  .hlavni img {
+    order: 2;
+    width: 425px;
+  }
+
+  .hlavni p {
+    margin: 30px 0;
+  }
+
+  button {
+    margin: 0 auto;
+  }
+
+  .uvod {
+    order: 1;
+    text-align: left;
+  }
+
+  .oddelovac {
+    margin: 10px 0 0 0;
+  }
+
+  .sluzby-ck,
+  .delegati {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text {
+    flex-direction: column;
+    width: 430px;
+    text-align: left;
+  }
+
+  .boxy {
+    width: 550px;
+  }
+
+  .sluzby-ck .boxy {
+    order: 1;
+  }
+
+  .sluzby-ck .text {
+    order: 2;
+  }
+  
+  .box {
+    width: 170px;
+  }
+
+}
